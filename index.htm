@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Ian Minderman</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="left"></div>
+    <div class="right"></div>
+
+    <nav class="nav">
+      <ul>
+        <li class="logo">IAN MINDERMAN</li>
+    
+          <div class="img"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="img-wrapper">
+        <div class="karina"></div>
+      </div>
+
+      <div class="info">
+        <ul>
+          <li>ianminderman1@gmail.com</li>
+          <li>+7 923 134 10-86</li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h1 id="last">Minderman</h1>
+        <p>American Web Developer</p>
+      </div>
+
+      <div class="name">Ian</div>
+
+      <div class="bottomnav" id="kellmenow">
+        <ul>
+          <li><a href="https://ianminderman.github.io/"><img class="rem" src='https://i.postimg.cc/4d4wXX5J/rem-square.jpg'></a></li>
+          <li><a href="https://ianminderman.github.io/AlyonaB/"><img class="rem" src="https://sun9-7.userapi.com/c854428/v854428007/18fe95/4VCM9YiBW8E.jpg"></a></li>
+          <li><a href="https://ianminderman.github.io/animepro/"><img class="rem" src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/f/6/6/e/f66eb3b27ebb0235bcb4c2b6c086450c.jpg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    TweenMax.to('.left', 2, {
+      delay: .8,
+      width: '50%',
+      ease: Power2.easeInOut
+    })
+
+    TweenMax.to('.right', 2, {
+      delay: .6,
+      width: '50%',
+      ease: Power3.easeInOut
+    })
+
+    TweenMax.from('.nav', 2, {
+      delay: 2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from('.text h1', 2, {
+      delay: .6,
+      x: 1000,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.from('.text p', 2, {
+      delay: .7,
+      x: 1000,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.to('.karina', 2, {
+      delay: 1.5,
+      width: '89.89vh',
+      ease: Power2.easeInOut
+    })
+
+    TweenMax.staggerFrom('.bottomnav ul li', 2, {
+      delay: 1,
+      x: 1000,
+      ease: Circ.easeInOut
+    }, 0.08)
+
+    TweenMax.from('.info', 2, {
+      delay: 0.5,
+      x: 1500,
+      ease: Circ.easeInOut
+    })
+
+    TweenMax.from('.name', 2, {
+      delay: 1.5,
+      x: -1000,
+      ease: Circ.easeInOut
+    })
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.left,
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left {
+  background: #B3B4AF;
+  left: 0%;
+  width: 0%;
+}
+
+.right {
+  background: #191921;
+  right: 0%;
+  width: 100%;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 10vh;
+  letter-spacing: 0;
+  position: absolute;
+  top: 45%;
+  left: -20%;
+  font-family: 'Raiderfont';
+  transform: rotate(270deg);
+  letter-spacing: 0;
+  color: transparent;
+  -webkit-text-stroke: 1.6px black;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 180px;
+}
+
+.img-wrapper .karina {
+  background-image: url('https://sun9-59.userapi.com/c845321/v845321395/190d9f/9bndmdP3pgs.jpg');
+  background-size: cover;
+  height: 89.89vh;
+  width: 0;
+  border-radius: 50%;
+}
+
+.rem {
+ height: 23vh;
+ width: 23vh;
+ border: solid white 2px;
+ border-radius: 50%;
+ right: 30%;
+} 
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  background: rgba(0, 0, 0, .8);
+  padding: 0 10px;
+}
+
+.info ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.text h1 {
+  font-size: 12.5vh;
+  color: #fff;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 3.6vh;
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+}
+
+.name {
+  position: absolute;
+  top: 35%;
+  right: 30%;
+  transform: translateY(-50%);
+  font-size: 20vh;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 4px #fff;
+}
+
+.bottomnav {
+  position: absolute;
+  display: block;
+  bottom: 7%;
+  right: 2%;
+}
+
+.bottomnav ul li {
+  margin: 13px;
+  float: left;
+}
+
+.rem:hover {
+opacity: 70%;
+}
+
+@media (max-width: 1080px) {  
+ #last {
+  font-size: 8vh;
+ }
+
+ .name {
+   font-size: 15vh;
+   top: 39%;
+   -webkit-text-stroke: 1px white;
+ }
+}
+
+@media (max-width: 875px) {  
+.info {
+  position: relative;
+  top: 0;
+  left: 15%;
+  background: transparent;
+}
+
+.info ul li {
+  display: block;
+  padding: 3px 10px;
+  font-size: 3vh;
+}
+}
+
+@media (max-width: 790px) {
+#last, .name, p {
+  display: none;
+}
+
+.bottomnav ul li {
+  display: block;
+  float: none;
+}
+}
